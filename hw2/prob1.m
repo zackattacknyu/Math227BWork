@@ -13,18 +13,20 @@ Df1x2 = @(x1,x2) -sin(x2);
 Df2x1 = @(x1,x2) exp(x1);
 Df2x2 = @(x1,x2) cos(x2);
 
+xv0 = [0;0];
 Jacob = @(x1,x2) [Df1x1(x1,x2) Df1x2(x1,x2);...
     Df2x1(x1,x2) Df2x2(x1,x2)];
 
-xv0 = [0;0];
+
 
 numIter = 20;
-xvValues = zeros(2,numIter);
+%xvValues = zeros(2,numIter);
 xvValues2 = zeros(2,numIter);
 
-curXvec = xv0;
+%curXvec = xv0;
 curXvec2 = xv0;
 for i = 1:numIter
+    %{
    curX1 = curXvec(1);
    curX2 = curXvec(2);
    fxv = [f1(curX1,curX2);f2(curX1,curX2)];
@@ -33,7 +35,7 @@ for i = 1:numIter
    nextX = curXvec - curJacob\fxv;
    xvValues(:,i) = nextX;
    curXvec = nextX;
-   
+   %}
    
    curX1A = curXvec2(1);
    curX2A = curXvec2(2);
