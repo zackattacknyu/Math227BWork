@@ -1,4 +1,4 @@
-function [ curXvec2,solFound ] = doNewtonMethod( f1,f2,Df1x1,Df1x2,Df2x1,Df2x2,xv0 )
+function [ curXvec2,solFound ,xvValues2] = doNewtonMethod( f1,f2,Df1x1,Df1x2,Df2x1,Df2x2,xv0 )
 %DONEWTONMETHOD Summary of this function goes here
 %   
 %
@@ -9,9 +9,9 @@ Jacob = @(x1,x2) [Df1x1(x1,x2) Df1x2(x1,x2);...
     Df2x1(x1,x2) Df2x2(x1,x2)];
 
 numIter = 50;
-epsilon = 1e-4;
+epsilon = 1e-1;
 tolerance = 1e-8;
-%xvValues2 = zeros(2,numIter);
+xvValues2 = [];
 
 curXvec2 = xv0;
 solFound=false;
@@ -31,6 +31,7 @@ for i = 1:numIter
    nextX2 = curXvec2 + deltaX;
    curXvec2 = nextX2;
    
+   xvValues2 = [xvValues2 curXvec2];
    if(norm(deltaX)<tolerance*norm(curXvec2))
        solFound=true;
        break;
