@@ -2,7 +2,7 @@ func = @(t,y) -t*y;
 
 w0=200;
 
-startT=0;
+startT=1;
 endT=5;
 NN=40;
 
@@ -21,4 +21,7 @@ for i = 1:NN
     tCurrent = tCurrent + h;
 end
 
-wCurrent
+Avalue = w0/exp(-0.5*(startT^2));
+actualY = Avalue*exp(-0.5*(endT^2));
+
+error = abs(wCurrent-actualY)
