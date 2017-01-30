@@ -3,6 +3,19 @@
 
 %method is as follows for multidim case
 %x_1 = x_0 - inv(Df(x_0)) f(x_0)
+
+%Part B
+%tests if correct by doing calculation
+%   and plugging result back into F to see
+%   if f values are near zero
+
+clear all;
+
+
+
+%%
+
+%Part C
 clear all;
 f1 = @(x1,x2) sin(x1) + cos(x2);
 f2 = @(x1,x2) exp(x1)+sin(x2);
