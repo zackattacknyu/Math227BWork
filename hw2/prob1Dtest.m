@@ -68,6 +68,7 @@ for i = 1:N
        
    end
 end
+maxError = max(fresArray(:));
 
 %show the output that was put into the .tex document
 fprintf('Max Value of F,G at solutions (should be close to zero):%d\n\n',maxError);
@@ -78,6 +79,8 @@ fprintf('AlphaD=%d\n',alphaD);
 fprintf('Beta1=%d\n',beta1);
 fprintf('Beta2=%d\n',beta2);
 fprintf('BetaD=%d\n',betaD);
+fprintf('A=%d\n',AA);
+fprintf('B=%d\n',BB);
 fprintf('N=%d\n\n',NN);
 fprintf('Solution Points are as follows (row 1 is x, row 2 is y):\n');
 solutionPts
