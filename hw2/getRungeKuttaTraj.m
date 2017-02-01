@@ -4,14 +4,15 @@ function [ wVals ] = getRungeKuttaTraj( func,w0,startT,NN,h )
 
 tCurrent = startT;
 wCurrent = w0;
-wVals = zeros(2,NN);
+wVals = zeros(2,NN+1);
+wVals(:,1)=wCurrent;
 for i = 1:NN
     
     nextW=calcNextW( func,tCurrent,wCurrent,h );
     
     tCurrent = tCurrent + h;
     
-    wVals(:,i)=nextW;
+    wVals(:,i+1)=nextW;
     wCurrent=nextW;
     
 end
