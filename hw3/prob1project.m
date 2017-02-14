@@ -25,16 +25,16 @@ hold off
 %}
 
 %h of 0.01 made at least one large error 
-hValue = 0.01;
-init=1;
-numN = 10;
+hValue = 0.001;
+init=0;
+numN = 20;
 yTrue = zeros(2,numN);
 yTrue(:,1)=[52.29;83.82];
 
 yLocalEst = zeros(2,numN);
 
 for jj = 1:numN
-    yTrue(:,jj)=[y1(hValue*jj);y2(hValue*jj)];
+    yTrue(:,jj)=[y1(hValue*jj+init);y2(hValue*jj+init)];
 end
 yLocalEst(:,1:2)=yTrue(:,1:2);
 
@@ -54,4 +54,5 @@ plot(tt,yLocalEst(2,:),'g--');
 legend('y1 true','y2 true','y1 local est','y2 local est')
 hold off
 
-yDiffs = abs(yTrue-yLocalEst)
+yDiffs = abs(yTrue-yLocalEst);
+yDiffs(:,3:end)'
