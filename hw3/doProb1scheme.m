@@ -1,6 +1,4 @@
 function [ yValues ] = doProb1scheme( initY0, initY1, hValue, nValue )
-%DOPROB1SCHEME Summary of this function goes here
-%   Detailed explanation goes here
 
 yValues = zeros(2,nValue+2);
 
