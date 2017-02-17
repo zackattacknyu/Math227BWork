@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    315615,       6464]
+NotebookDataLength[    315610,       6464]
 NotebookOptionsPosition[    314085,       6414]
-NotebookOutlinePosition[    314432,       6429]
-CellTagsIndexPosition[    314389,       6426]
+NotebookOutlinePosition[    314428,       6429]
+CellTagsIndexPosition[    314385,       6426]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -6412,8 +6412,8 @@ e9KB1rAxGh4bxivCnWf8ahJ5yhM0nn6xNzLZwgb351/+VT9pGDWnO39yZ0PW
    3.696285622135085*^9}, 3.6962860953229303`*^9}]
 }, Open  ]]
 },
-WindowSize->{1080, 1837},
-WindowMargins->{{-1088, Automatic}, {Automatic, -8}},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -6428,16 +6428,16 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 5757, 152, 297, "Input"],
+Cell[558, 20, 5757, 152, 259, "Input"],
 Cell[6318, 174, 219, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[6562, 183, 6088, 177, 449, "Input"],
+Cell[6562, 183, 6088, 177, 164, "Input"],
 Cell[12653, 362, 626, 11, 21, "Message"],
 Cell[13282, 375, 628, 11, 21, "Message"]
 }, Open  ]],
 Cell[13925, 389, 198, 4, 30, "Input"],
 Cell[CellGroupData[{
-Cell[14148, 397, 7329, 212, 430, "Input"],
+Cell[14148, 397, 7329, 212, 392, "Input"],
 Cell[21480, 611, 457, 8, 21, "Message"],
 Cell[21940, 621, 457, 8, 21, "Message"],
 Cell[22400, 631, 41115, 801, 141, "Output"]
@@ -6462,7 +6462,7 @@ Cell[200707, 4135, 10318, 288, 639, "Input"],
 Cell[211028, 4425, 604, 11, 21, "Message"],
 Cell[211635, 4438, 40903, 800, 141, "Output"],
 Cell[252541, 5240, 604, 11, 21, "Message"],
-Cell[253148, 5253, 40966, 800, 141, "Output"],
+Cell[253148, 5253, 40966, 800, 72, "Output"],
 Cell[294117, 6055, 15818, 273, 254, "Output"],
 Cell[309938, 6330, 4131, 81, 238, "Output"]
 }, Open  ]]
